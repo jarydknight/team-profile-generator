@@ -8,3 +8,11 @@ test("Creates and Employee class", () => {
     expect(testEmployee.id).toBe("Hashira 01");
     expect(testEmployee.email).toBe("kyojuro.rengoku@gmail.com")
 });
+
+test("Employee.getName() returns name property of employee", () => {
+    const testEmployee = new Employee("Uzui", "Hashira 02", "tengen.uzui@gmail.com");
+    
+    expect(testEmployee.name).toBe("Uzui");
+    expect(testEmployee.id).toBe("Hashira 02");
+    expect(testEmployee.email).toBe("tengen.uzui@gmail.com")
+});
