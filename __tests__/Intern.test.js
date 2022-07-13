@@ -32,3 +32,8 @@ test("Intern.getRole() returns 'Intern'", () => {
     const testIntern = new Intern("Tomioka", "Hashira 05", "giyu.tomioka#gmail.com", "Demon Slayer Corps");
     expect(testIntern.getRoll()).toBe("Intern");
 });
+
+test("Intern.getSchool() returns 'Demon Slayer Corps'", () => {
+    const testIntern = new Intern("Shinazugawa", "Hashira 06", "sanemi.shinzugawa@gmail.com", "Demon Slayer Corps");
+    expect(testIntern.getSchool()).toBe("Demon Slayer Corps");
+})
