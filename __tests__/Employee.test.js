@@ -26,3 +26,8 @@ test("Employee.getEmail() returns email property of employee", () => {
     
     expect(testEmployee.getEmail()).toBe("obanai.iguro@gmail.com")
 });
+
+test("Employee.getRole() returns 'Employee'", () => {
+    const testEmployee = new Employee("Tomioka", "Hashira 05", "giyu.tomioka#gmail.com");
+    expect(testEmployee.getRoll()).toBe("Employee");
+});
