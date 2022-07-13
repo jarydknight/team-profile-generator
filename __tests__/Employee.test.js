@@ -12,7 +12,17 @@ test("Creates and Employee class", () => {
 test("Employee.getName() returns name property of employee", () => {
     const testEmployee = new Employee("Uzui", "Hashira 02", "tengen.uzui@gmail.com");
     
-    expect(testEmployee.name).toBe("Uzui");
-    expect(testEmployee.id).toBe("Hashira 02");
-    expect(testEmployee.email).toBe("tengen.uzui@gmail.com")
+    expect(testEmployee.getName()).toBe("Uzui");
+});
+
+test("Employee.getId() returns id property of employee", () => {
+    const testEmployee = new Employee("Kocho", "Hashira 03", "tengen.uzui@gmail.com");
+    
+    expect(testEmployee.getId()).toBe("Hashira 03");
+});
+
+test("Employee.getEmail() returns email property of employee", () => {
+    const testEmployee = new Employee("Iguro", "Hashira 04", "obanai.iguro@gmail.com");
+    
+    expect(testEmployee.getEmail()).toBe("obanai.iguro@gmail.com")
 });
