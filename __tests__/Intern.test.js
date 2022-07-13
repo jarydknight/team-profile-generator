@@ -17,7 +17,7 @@ test("Intern.getName() returns name property of Intern", () => {
 });
 
 test("Intern.getId() returns id property of Intern", () => {
-    const testIntern = new Intern("Kocho", "Hashira 03", "tengen.uzui@gmail.com", "Demon Slayer Corps");
+    const testIntern = new Intern("Kocho", "Hashira 03", "kocho.shinobu@gmail.com", "Demon Slayer Corps");
     
     expect(testIntern.getId()).toBe("Hashira 03");
 });
@@ -30,7 +30,7 @@ test("Intern.getEmail() returns email property of Intern", () => {
 
 test("Intern.getRole() returns 'Intern'", () => {
     const testIntern = new Intern("Tomioka", "Hashira 05", "giyu.tomioka#gmail.com", "Demon Slayer Corps");
-    expect(testIntern.getRoll()).toBe("Intern");
+    expect(testIntern.getRole()).toBe("Intern");
 });
 
 test("Intern.getSchool() returns 'Demon Slayer Corps'", () => {

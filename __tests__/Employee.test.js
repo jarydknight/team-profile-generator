@@ -16,7 +16,7 @@ test("Employee.getName() returns name property of employee", () => {
 });
 
 test("Employee.getId() returns id property of employee", () => {
-    const testEmployee = new Employee("Kocho", "Hashira 03", "tengen.uzui@gmail.com");
+    const testEmployee = new Employee("Kocho", "Hashira 03", "Kocho.shinobu@gmail.com");
     
     expect(testEmployee.getId()).toBe("Hashira 03");
 });
@@ -28,6 +28,7 @@ test("Employee.getEmail() returns email property of employee", () => {
 });
 
 test("Employee.getRole() returns 'Employee'", () => {
-    const testEmployee = new Employee("Tomioka", "Hashira 05", "giyu.tomioka#gmail.com");
-    expect(testEmployee.getRoll()).toBe("Employee");
+    const testEmployee = new Employee("Tomioka", "Hashira 05", "giyu.tomioka@gmail.com");
+
+    expect(testEmployee.getRole()).toBe("Employee");
 });

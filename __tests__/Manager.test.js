@@ -17,7 +17,7 @@ test("Manager.getName() returns name property of Manager", () => {
 });
 
 test("Manager.getId() returns id property of Manager", () => {
-    const testManager = new Manager("Kocho", "Hashira 03", "tengen.uzui@gmail.com", "102");
+    const testManager = new Manager("Kocho", "Hashira 03", "kocho.shinobu@gmail.com", "102");
     
     expect(testManager.getId()).toBe("Hashira 03");
 });
