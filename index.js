@@ -173,7 +173,6 @@ const appendText = (data) => {
 
 // Function to build individual members by prompting specific questions for each type of employee
 const buildIndividualMember = (d) => {
-    console.log(d)
     switch (d.member) {
         case "Manager":
             inquirer.prompt(managerQuestions)
