@@ -18,7 +18,6 @@ const newClassInstance = (data, member) => {
     else {
         obj = new Employee(data.name, data.id, data.email)
     }
-    console.log(obj)
     return obj;
 };
 
